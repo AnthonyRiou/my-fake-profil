@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PaysController!{% endblock %}
+{% block title %}Hello VillesController!{% endblock %}
 
 {% block body %}
 <style>
@@ -9,12 +9,14 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>🗺 Liste des Pays 🗺 </h1>
+    <h1> 🌇 Liste des villes 🌇</h1>
 
     <ul>
-    {% for country in pays %}
-       <a href="{{ path('pays_id', {id: country.id })}}"><li>{{ country.nom }}</li></a> 
-    {% endfor %}   
+        {% for ville in villes %}
+        <li>{{ville.nom}}</li>
+        {% endfor %}
     </ul>
+
+    
 </div>
 {% endblock %}
