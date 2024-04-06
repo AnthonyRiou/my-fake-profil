@@ -19,13 +19,10 @@
     }
     ul li a {
         text-decoration : none;
-<<<<<<< HEAD
         color: black;
     }
      ul li a:hover{
         color: red
-=======
->>>>>>> 359aa36334b50395a83eee3457f42226d19b68e2
     }
 </style>
 
@@ -33,11 +30,7 @@
     <h1>👩‍👩‍👧‍👧👨‍👦Liste des groupes👩‍👩‍👧‍👧👨‍👦 </h1>
 
     <h2>Voici les différents groupes :</h2>
-<<<<<<< HEAD
     <h4>(Obtenez la liste des utilisateurs composant le groupe en cliquant sur le nom de celui-ci)</h4>
-=======
-    <h4>(Obtenez la liste des ulisiteurs composant le groupe en cliquant sur le nom de celui-ci)</h4>
->>>>>>> 359aa36334b50395a83eee3457f42226d19b68e2
     <ul>
         {% for groupe in groupes %}
         <li><a href="{{ path('groupes_id', {id: groupe.id}) }}">{{ groupe.nom }}</a></li>
