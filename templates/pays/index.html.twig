@@ -1,11 +1,28 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PaysController!{% endblock %}
+{% block title %}Pays{% endblock %}
 
 {% block body %}
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    
+    h1{
+        text-align : center
+    }
+
+    ul li {
+        text-align : center;
+        list-style-type : none;
+    }
+    ul li a {
+        text-decoration : none;
+        color: black;
+    }
+    ul li a:hover{
+        color: red
+    }
+
 </style>
 
 <div class="example-wrapper">
@@ -13,7 +30,7 @@
 
     <ul>
     {% for country in pays %}
-       <a href="{{ path('pays_id', {id: country.id })}}"><li>{{ country.nom }}</li></a> 
+       <li><a href="{{ path('pays_id', {id: country.id })}}">{{ country.nom }} </a></li>
     {% endfor %}   
     </ul>
 </div>

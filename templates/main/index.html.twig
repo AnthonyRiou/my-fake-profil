@@ -6,15 +6,39 @@
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+
+     h1{
+        text-align : center
+    }
+
+    h4{
+         text-align : center  
+    }
+
+    ul li {
+        text-align : center;
+        list-style-type : none;
+    }
+    ul li a {
+        text-decoration : none;
+        color: black;
+    }
+     ul li a:hover{
+        color: red
+    }
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1> Création de faux profils</h1>
 
-    This friendly message is coming from:
+    <h4>Les différents items</h4>
+
     <ul>
-        <li>Your controller at <code>C:/xampp/htdocs/cours-symfony/my-fake-profil/src/Controller/MainController.php</code></li>
-        <li>Your template at <code>C:/xampp/htdocs/cours-symfony/my-fake-profil/templates/main/index.html.twig</code></li>
+        <li><a href="{{path('app_pays')}}">Les pays</a></li>
+        <li><a href="{{path('app_villes')}}">Les villes</a></li>
+        <li><a href="{{path('app_utilisateurs')}}">Les utilisateurs</a></li>
+        <li><a href="{{path('app_groupes')}}">Les groupes d'utilisateurs</a></li>
+      
     </ul>
 </div>
 {% endblock %}
